@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "tts extension",
+    "version": "0.1.0",
+
+    "background": {
+        "service_worker": "background.js"
+    },
+
+    "incognito": "spanning",
+
+    "permissions": [
+        "tts",
+        "tabs",
+        "activeTab",
+        "webRequest",
+        "scripting"
+    ],
+
+    "host_permissions": [
+        "<all_urls>"
+    ],
+
+    "browser_action": {
+        "default_popup": "popup.html"
+    }
+}
